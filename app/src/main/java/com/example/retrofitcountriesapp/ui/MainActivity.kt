@@ -5,8 +5,12 @@ import android.os.Bundle
 import androidx.activity.viewModels
 import androidx.core.view.isVisible
 import androidx.lifecycle.viewModelScope
+import androidx.recyclerview.widget.GridLayoutManager
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.retrofitcountriesapp.R
+import com.example.retrofitcountriesapp.data.domain.model.CountryModel
 import com.example.retrofitcountriesapp.databinding.ActivityMainBinding
+import com.example.retrofitcountriesapp.ui.adapter.RecyclerCountriesAdapter
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.launch
 
@@ -26,7 +30,7 @@ class MainActivity : AppCompatActivity() {
     private fun setupViewModel(){
         viewModel.viewModelScope.launch {
             viewModel.listCountriesFlow.collect {
-                println("Lista: $it")
+                initAdapter(it)
                 binding.progressLoading.isVisible = false
             }
         }
@@ -36,4 +40,11 @@ class MainActivity : AppCompatActivity() {
             }
         }
     }
+
+    private fun initAdapter(listCountries: List<CountryModel>){
+        val adapter = RecyclerCountriesAdapter(listCountries)
+        binding.recyclerCountries.layoutManager = GridLayoutManager(this, 2)
+        binding.recyclerCountries.adapter = adapter
+    }
+
 }
