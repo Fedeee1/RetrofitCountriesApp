@@ -5,6 +5,8 @@ import com.google.gson.annotations.SerializedName
 data class CountryModel(
     @SerializedName("name")
     val name: String,
-    @SerializedName("url")
-    val url: String
+    @SerializedName("capital")
+    val capital: String,
+    @SerializedName("href")
+    val href: Any
 )

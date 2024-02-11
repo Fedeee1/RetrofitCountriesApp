@@ -7,9 +7,13 @@ import com.example.retrofitcountriesapp.data.domain.model.CountryModel
 import com.example.retrofitcountriesapp.data.domain.repository.remote.mapper.GetListCountryMapper
 import javax.inject.Inject
 
-class GetCountriesUseCase @Inject constructor(private val repository: CountriesRepository,
-                                              private val getListPokemonResultMapper: GetListCountryMapper
-){
-    suspend operator fun invoke() : List<CountryModel> = getListPokemonResultMapper.fromResponse(repository.getPokemons(
-        GET_LIST_COUNTRY_LIMIT, GET_LIST_COUNTRY_OFFSET)).results
+class GetCountriesUseCase @Inject constructor(
+    private val repository: CountriesRepository,
+    private val getListPokemonResultMapper: GetListCountryMapper
+) {
+    suspend operator fun invoke(): List<CountryModel> = getListPokemonResultMapper.fromResponse(
+        repository.getPokemons(
+            GET_LIST_COUNTRY_LIMIT, GET_LIST_COUNTRY_OFFSET
+        )
+    ).data
 }

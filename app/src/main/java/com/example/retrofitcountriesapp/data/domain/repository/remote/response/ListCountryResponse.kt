@@ -2,9 +2,7 @@ package com.example.retrofitcountriesapp.data.domain.repository.remote.response
 
 import com.google.gson.annotations.SerializedName
 
-data class PokemonResponse(
-    @SerializedName("name")
-    val name: String,
-    @SerializedName("url")
-    val url: String
+data class ListCountryResponse (
+    @SerializedName("data")
+    val data : List<CountryResponse>
 )
