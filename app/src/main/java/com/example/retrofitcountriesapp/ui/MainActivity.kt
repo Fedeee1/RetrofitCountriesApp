@@ -1,7 +1,8 @@
-package com.example.retrofitcountriesapp
+package com.example.retrofitcountriesapp.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.retrofitcountriesapp.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
