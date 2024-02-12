@@ -1,7 +1,7 @@
 package com.example.retrofitcountriesapp.ui
 
 import androidx.lifecycle.ViewModel
-import com.example.retrofitcountriesapp.data.domain.model.CountryModel
+import com.example.retrofitcountriesapp.data.domain.model.country.CountryModel
 import com.example.retrofitcountriesapp.data.domain.uses_cases.GetCountriesUseCase
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.Flow

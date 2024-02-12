@@ -6,9 +6,7 @@ import androidx.activity.viewModels
 import androidx.core.view.isVisible
 import androidx.lifecycle.viewModelScope
 import androidx.recyclerview.widget.GridLayoutManager
-import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.retrofitcountriesapp.R
-import com.example.retrofitcountriesapp.data.domain.model.CountryModel
+import com.example.retrofitcountriesapp.data.domain.model.country.CountryModel
 import com.example.retrofitcountriesapp.databinding.ActivityMainBinding
 import com.example.retrofitcountriesapp.ui.adapter.RecyclerCountriesAdapter
 import dagger.hilt.android.AndroidEntryPoint

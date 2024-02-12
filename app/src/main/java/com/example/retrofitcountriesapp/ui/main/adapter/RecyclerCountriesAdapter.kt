@@ -7,12 +7,11 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.cardview.widget.CardView
-import androidx.core.net.toUri
 import androidx.recyclerview.widget.RecyclerView
 import com.example.retrofitcountriesapp.R
-import com.example.retrofitcountriesapp.data.domain.model.CountryModel
+import com.example.retrofitcountriesapp.data.domain.model.country.CountryModel
 import com.squareup.picasso.Picasso
-
+import kotlinx.parcelize.Parcelize
 class RecyclerCountriesAdapter(listCountry: List<CountryModel>): RecyclerView.Adapter<RecyclerCountriesAdapter.ViewHolder>() {
 
     private var listCountries = listCountry
