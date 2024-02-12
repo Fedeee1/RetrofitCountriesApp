@@ -1,4 +1,4 @@
-package com.example.retrofitcountriesapp.ui.adapter
+package com.example.retrofitcountriesapp.ui.main.adapter
 
 import android.net.Uri
 import android.view.LayoutInflater

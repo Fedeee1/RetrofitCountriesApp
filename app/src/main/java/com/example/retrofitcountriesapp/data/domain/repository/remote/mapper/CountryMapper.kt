@@ -1,6 +1,6 @@
 package com.example.retrofitcountriesapp.data.domain.repository.remote.mapper
 
-import com.example.retrofitcountriesapp.data.domain.model.CountryModel
+import com.example.retrofitcountriesapp.data.domain.model.country.CountryModel
 import com.example.retrofitcountriesapp.data.domain.repository.remote.response.CountryResponse
 
 class CountryMapper : ResponseMapper<CountryResponse, CountryModel> {

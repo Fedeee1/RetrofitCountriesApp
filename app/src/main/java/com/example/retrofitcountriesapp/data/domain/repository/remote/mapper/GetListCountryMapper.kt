@@ -1,7 +1,7 @@
 package com.example.retrofitcountriesapp.data.domain.repository.remote.mapper
 
-import com.example.retrofitcountriesapp.data.domain.model.CountryModel
-import com.example.retrofitcountriesapp.data.domain.model.ListCountryModel
+import com.example.retrofitcountriesapp.data.domain.model.country.CountryModel
+import com.example.retrofitcountriesapp.data.domain.model.country.ListCountryModel
 import com.example.retrofitcountriesapp.data.domain.repository.remote.response.CountryResponse
 import javax.inject.Inject
 

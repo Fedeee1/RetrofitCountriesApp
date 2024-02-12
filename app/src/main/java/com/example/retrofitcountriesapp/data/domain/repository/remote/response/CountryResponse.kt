@@ -1,6 +1,5 @@
 package com.example.retrofitcountriesapp.data.domain.repository.remote.response
 
-import com.example.retrofitcountriesapp.data.domain.model.HrefXModel
 import com.google.gson.annotations.SerializedName
 
 data class CountryResponse(

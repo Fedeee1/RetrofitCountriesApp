@@ -1,4 +1,4 @@
-package com.example.retrofitcountriesapp.ui
+package com.example.retrofitcountriesapp.ui.main
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -8,7 +8,7 @@ import androidx.lifecycle.viewModelScope
 import androidx.recyclerview.widget.GridLayoutManager
 import com.example.retrofitcountriesapp.data.domain.model.country.CountryModel
 import com.example.retrofitcountriesapp.databinding.ActivityMainBinding
-import com.example.retrofitcountriesapp.ui.adapter.RecyclerCountriesAdapter
+import com.example.retrofitcountriesapp.ui.main.adapter.RecyclerCountriesAdapter
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.launch
 
