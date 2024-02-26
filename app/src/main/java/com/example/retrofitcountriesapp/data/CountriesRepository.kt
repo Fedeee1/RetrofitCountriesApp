@@ -8,8 +8,8 @@ import javax.inject.Inject
 
 class CountriesRepository @Inject constructor(private val api: CountryService, private val pokemonProvider: CountryProvider) {
 
-    suspend fun getPokemons(limit: Int, offset: Int) : List<CountryResponse>{
-        val response = api.getPokemons(limit, offset)
+    suspend fun getCountries(limit: Int) : List<CountryResponse>{
+        val response = api.getCountries(limit)
         pokemonProvider.countries = response
         return response
     }
